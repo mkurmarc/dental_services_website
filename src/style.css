@@ -1,0 +1,16 @@
+:root {
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+/* Typography */
+
+/* Layout */
