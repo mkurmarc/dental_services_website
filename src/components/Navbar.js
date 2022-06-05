@@ -1,11 +1,15 @@
 import React from "react";
+import logo from "../images/edited/logos/logo2.png";
 
 export default function Navbar() {
   return (
     <nav>
-      <header>
-        <h1>Hello from nav</h1>
-      </header>
+      <img
+        src={logo}
+        alt="Advanced Dental Solutions Demo"
+        className="nav--logo"
+      />
+      <header></header>
     </nav>
   );
 }

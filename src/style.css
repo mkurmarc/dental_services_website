@@ -13,4 +13,75 @@ body {
 }
 /* Typography */
 
+body {
+  font-family: "Roboto", sans-serif;
+}
+
 /* Layout */
+
+/* Navbar */
+nav {
+  background: rgb(0, 0, 0);
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  padding: 1em;
+}
+
+.nav--logo {
+  width: 20%;
+  margin-right: auto;
+}
+
+/* Footer */
+
+footer {
+  background-color: rgb(51, 51, 51);
+  color: white;
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 1em;
+}
+
+.footer--container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer--slogan {
+  border: 1px solid yellow;
+  flex-shrink: 1;
+  /* width: 20%; */
+}
+
+.footer--logo {
+  width: 30%;
+}
+
+.footer--text {
+  width: 40%;
+}
+
+.footer--contact {
+  /* flex-grow: 3; */
+  border: 1px solid red;
+}
+
+.footer--contact-section {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer--icon {
+  margin-right: 0.4em;
+}
+
+.footer--contact-title {
+  margin-bottom: 0;
+}
+
+.footer--contact-paragraph {
+  margin: 0.7em;
+  font-weight: 400;
+}
