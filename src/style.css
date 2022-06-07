@@ -38,39 +38,51 @@ nav {
 footer {
   background-color: rgb(51, 51, 51);
   color: white;
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-weight: 400;
   padding: 1em;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  /* width: 100%; */
 }
 
 .footer--container {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  /* width: 100%; */
+  /* justify-content: space-between; */
 }
 
-.footer--slogan {
-  border: 1px solid yellow;
-  flex-shrink: 1;
-  /* width: 20%; */
+.footer--item_slogan {
+  flex-grow: 1;
+  /* border: 1px solid yellow; */
+  /* max-width: 30%; */
+  text-align: center;
+
+}
+
+.footer--item_contact {
+  flex-grow: 1;
+  /* border: 1px solid red; */
+}
+.footer--item_signup {
+  flex-grow: 1;
+  /* border: 1px solid blue; */
 }
 
 .footer--logo {
-  width: 30%;
+  width: 70%;
+  /* border: 1px solid pink; */
 }
 
 .footer--text {
-  width: 40%;
-}
-
-.footer--contact {
-  /* flex-grow: 3; */
-  border: 1px solid red;
+  /* border: 1px solid green; */
 }
 
 .footer--contact-section {
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
 }
 
 .footer--icon {
@@ -84,4 +96,63 @@ footer {
 .footer--contact-paragraph {
   margin: 0.7em;
   font-weight: 400;
+}
+
+/* Desktop Version */
+@media (min-width: 600px) {
+  footer {
+    font-size: 1rem;
+  }
+
+  .footer--container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 1em;
+  }
+
+  .footer--item_slogan {
+    flex-grow: 2.5;
+    text-align: center;
+  }
+
+  .footer--text {
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer--logo {
+    max-width: 230px;
+  }
+
+  .footer--item_contact {
+    flex-grow: 2.5;
+  }
+
+  .footer--contact_title {
+    font-size: 1.3rem;
+    margin: 0;
+  }
+
+  .footer--item_signup {
+    flex-grow: 7;
+  }
+
+  .signup--title {
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+/* Home */
+
+/* Home Images */
+
+#home_card_one--img,
+#cleaner_icon,
+#bio_icon,
+#strong_icon,
+#home_card_three--img {
+  width: 20%;
 }
