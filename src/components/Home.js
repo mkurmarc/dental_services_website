@@ -1,6 +1,6 @@
 import React from "react";
-import keysplit_hard from "../images/raw/keyprint/keysplit_hard.png";
-import keysplit_soft from "../images/raw/keyprint/keysplit_soft.png";
+import keysplit_hard from "../images/raw/keyprint/keysplint_hard.png";
+import keysplit_soft from "../images/raw/keyprint/keysplint_soft.png";
 import cleaner_icon from "../images/raw/keyprint/easily_cleaned_icon.png";
 import bio_icon from "../images/raw/keyprint/bio_icon.png";
 import strong_icon from "../images/raw/keyprint/strong_icon.png";
@@ -25,7 +25,7 @@ function HomeCardOne() {
     return (
         <section className="home_card_one--container">
             <h2 >3-D PRINTED TECHNOLOGY</h2>
-            <p>The next evolutionary step in occusal splints has arrived. Digitally 
+            <p>The next evolutionary step in occusal splints has arrived. Digitally
                 designed and 3-D printed for maximum precision.</p>
             <img id="home_card_one--img" src={keysplit_hard}></img>
             <h3>KEYSPLINT HARD</h3>
@@ -41,22 +41,22 @@ function HomeCardTwo() {
                 <div>
                     <img id="cleaner_icon" src={cleaner_icon}></img>
                     <h3>EASY TO CLEAN</h3>
-                    <p>Compliant with global industry standards. Rigorous testing for safety 
+                    <p>Compliant with global industry standards. Rigorous testing for safety
                         and effectiveness per ISO 10993</p>
                 </div>
                 <div>
                     <img id="bio_icon" src={bio_icon}></img>
                     <h3>FULLY BIOCOMPATIBLE</h3>
-                    <p>Compliant with global industry standards. Rigorous testing for safety 
+                    <p>Compliant with global industry standards. Rigorous testing for safety
                         and effectiveness per ISO 10993</p>
-                </div>                
+                </div>
                 <div>
                     <img id="strong_icon" src={strong_icon}></img>
                     <h3>DURABLE AND LONG LIFE</h3>
-                    <p>Compliant with global industry standards. Rigorous testing for safety 
+                    <p>Compliant with global industry standards. Rigorous testing for safety
                         and effectiveness per ISO 10993</p>
                 </div>
-            </div>            
+            </div>
         </section>
     )
 }
@@ -67,7 +67,7 @@ function HomeCardThree() {
             <img id="home_card_three--img" src={keysplit_soft}></img>
             <h3>KEYSPLINT SOFT</h3>
             <h2 >ELASTIC MEMORY BENEFITS ALL</h2>
-            <p>By simply warming in water, placement become easy, fast and painless. Less 
+            <p>By simply warming in water, placement become easy, fast and painless. Less
                 hassle and chairside time. Increased patient comfort. </p>
         </section>
     )
