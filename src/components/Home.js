@@ -2,7 +2,7 @@ import React from "react";
 import keysplit_hard from "../images/raw/keyprint/keysplint_hard.png";
 import keysplit_soft from "../images/raw/keyprint/keysplint_soft.png";
 import cleaner_icon from "../images/raw/keyprint/easily_cleaned_icon.png";
-import bio_icon from "../images/raw/keyprint/bio_icon.png";
+import bio_icon from "../images/raw/keyprint/biocompatible_icon.png";
 import strong_icon from "../images/raw/keyprint/strong_icon.png";
 
 
