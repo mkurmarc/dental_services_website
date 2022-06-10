@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <footer>
       <div className="footer--container">
-        <div className="footer--item footer--slogan">
+        <div className="footer--item_slogan">
           <img
             src={footerLogo}
             alt="Advanced Dental Solutions LLC"
@@ -16,8 +16,9 @@ export default function Footer() {
             practices.
           </p>
         </div>
-        <div className="footer--item footer--contact">
-          <p className="footer--contact-title">Get in touch</p>
+
+        <div className="footer--item_contact">
+          <p className="footer--contact_title">Get in touch</p>
           <div className="footer--contact-section">
             <span class="material-icons footer--icon">place</span>
             <p className="footer--contact-paragraph">
@@ -35,8 +36,13 @@ export default function Footer() {
             <p className="footer--contact-paragraph">(626) 720-1944</p>
           </div>
         </div>
-        <div className="footer-item">
-          <h5>Sign Up For Our Newsletter</h5>
+
+        <div className="footer--item_signup">
+          <h5 className="signup--title">Sign Up For Our Newsletter</h5>
+          <p>
+            We will send you updates on our latest products and more.
+            Unsubscribe at any time.
+          </p>
         </div>
       </div>
     </footer>
