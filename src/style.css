@@ -20,18 +20,8 @@ body {
 /* Layout */
 
 /* Navbar */
-nav {
-  background: rgb(0, 0, 0);
-  color: #fff;
-  display: flex;
-  flex-direction: row;
-  padding: 1em;
-}
 
-.nav--logo {
-  width: 20%;
-  margin-right: auto;
-}
+/* Home Page */
 
 /* Footer */
 
@@ -59,7 +49,6 @@ footer {
   /* border: 1px solid yellow; */
   /* max-width: 30%; */
   text-align: center;
-
 }
 
 .footer--item_contact {
@@ -98,8 +87,209 @@ footer {
   font-weight: 400;
 }
 
-/* Desktop Version */
+/******* Desktop Version *******/
 @media (min-width: 600px) {
+  /* Navbar */
+  nav {
+    background-color: #111213;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    padding: 1em;
+  }
+  
+  .nav--logo {
+    width: 20%;
+    margin-right: auto;
+    padding-left: 5em;
+  }
+  
+  /* .material-symbols-outlined {
+    
+  } */
+
+/* Home Page */
+  header {
+    background-color: #111213;
+    height: 50rem;
+    /* background: linear-gradient(180deg, #111111 0%, #0B192D 89.06%); */
+  }
+  
+  .home_header--container {
+    padding-top: 8rem;
+    padding-left: 8rem;
+    padding-right: 11.5rem;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .home_header--container > h1 {
+    margin: 0;
+    color: #fff;
+    font-family: Oswald;
+    font-weight: 300;
+    font-size: 90px;
+    letter-spacing: 0.14em;
+    line-height: 95px;
+    max-width: 805px;
+  }
+  
+  .home_header--about {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .home_header--hyphen { 
+    width: 45.06px;
+    height: 0px;
+    border: 1.5px solid #FFFFFF;
+    margin-top: 60px;
+  }
+  
+  .home_header--about > h3 {
+    font-family: 'Oswald';
+    font-style:normal;
+    font-weight: 100;
+    font-size: 2em;
+    line-height: 44px;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+    margin-top: 1.2em;
+    margin-left: 7px;
+  }
+  
+  .home_header--p {
+    align-self: flex-end;
+    color: #fff;
+    font-family: 'Yaldevi';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 1.8rem;
+    line-height: 40px;
+    letter-spacing: 0.05em;  
+    max-width: 18em;
+    max-height: 50px;
+  }
+
+  /* Home Card One */
+  .home_card_one--container {
+    display: flex;
+    flex-direction: row;
+    padding: 8em;
+    /* padding-top: 8rem;
+    padding-left: 8rem; */
+    background: conic-gradient(
+      from 90deg at -49.22% 100%, 
+      #FFFFFF 0deg, rgba(255, 255, 255, 0) 360deg), 
+      #1A1A1C;
+  }
+
+  .home_card_one--item > h2 {
+    width: 638px;
+    max-height: 158px;
+    margin-top: 0;
+    font-family: 'Crimson Text';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 94px;
+    letter-spacing: 0.02em;    
+    color: #FFFFFF;  
+  }
+
+  .home_card_one--item > p {
+    width: 550.89px;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 25px;
+    line-height: 120%;
+    letter-spacing: 0.12em;
+    color: #FFFFFF;
+  }
+
+  .home_card_one--item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* .home_card_one--item  */
+
+  #home_card_one--img {
+    width: 70%;
+  }
+
+  .home_card_one--item > h3 {
+    align-self: flex-end;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 30px;
+    /* or 86% */    
+    letter-spacing: 0.12em;    
+    color: #FFFFFF;
+  }
+
+  /* Home Card Two */
+
+
+  /* Home Card Three */
+  .home_card_three--container {
+    display: flex;
+    flex-direction: row;
+    padding: 8em;
+    background: conic-gradient(
+      from 90deg at -49.22% 100%, 
+      #FFFFFF 0deg, rgba(255, 255, 255, 0) 360deg), 
+      #1A1A1C;
+  }
+
+  .home_card_three--item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .home_card_three--item > h3 {
+    width: 270px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 30px;
+    /* or 86% */
+    letter-spacing: 0.12em;    
+    color: #FFFFFF;
+  }
+
+  .home_card_three--item > h2 {
+    width: 730px;
+    font-family: 'Crimson Text';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 94px;
+    letter-spacing: 0.08em;    
+    color: #FFFFFF;
+  }
+
+  .home_card_three--item > p {
+    width: 550px;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 25px;
+    line-height: 30px;
+    /* or 120% */    
+    letter-spacing: 0.12em;    
+    color: #FFFFFF;
+  }
+
+  #home_card_three--img {
+    width: 100%;
+  }
+
+/* Footer */
   footer {
     font-size: 1rem;
   }
@@ -149,10 +339,9 @@ footer {
 
 /* Home Images */
 
-#home_card_one--img,
+
 #cleaner_icon,
 #bio_icon,
-#strong_icon,
-#home_card_three--img {
-  width: 20%;
+#strong_icon {
+  width: 10%;
 }
