@@ -21,7 +21,42 @@ body {
 
 /* Navbar */
 
+/* Navbar */
+nav {
+  background-color: #111213;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  padding: 1em;
+}
+
+.nav--logo {
+  width: 40%;
+  margin-right: auto;
+  padding-left: 5em;
+}
+
+
 /* Home Page */
+
+.home_main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Home Images */
+#home_card_one--img,
+#home_card_three--img {
+  width: 20%;
+}
+
+#cleaner_icon,
+#bio_icon,
+#strong_icon {
+  width: 10%;
+}
+
 
 /* Footer */
 
@@ -89,20 +124,6 @@ footer {
 
 /******* Desktop Version *******/
 @media (min-width: 600px) {
-  /* Navbar */
-  nav {
-    background-color: #111213;
-    color: #fff;
-    display: flex;
-    flex-direction: row;
-    padding: 1em;
-  }
-  
-  .nav--logo {
-    width: 20%;
-    margin-right: auto;
-    padding-left: 5em;
-  }
   
   /* .material-symbols-outlined {
     
@@ -232,6 +253,11 @@ footer {
   }
 
   /* Home Card Two */
+  .home_card_two--container {
+    display: flex;
+    flex-direction: column;
+  }
+
 
 
   /* Home Card Three */
@@ -243,6 +269,10 @@ footer {
       from 90deg at -49.22% 100%, 
       #FFFFFF 0deg, rgba(255, 255, 255, 0) 360deg), 
       #1A1A1C;
+  }
+
+  .home_card_three--container > div {
+    
   }
 
   .home_card_three--item {
@@ -335,13 +365,3 @@ footer {
   }
 }
 
-/* Home */
-
-/* Home Images */
-
-
-#cleaner_icon,
-#bio_icon,
-#strong_icon {
-  width: 10%;
-}

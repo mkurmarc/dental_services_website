@@ -42,33 +42,41 @@ function HomeCardOne() {
 function HomeCardTwo() {
   return (
     <section className="home_card_two">
+
       <div className="home_card_two--container">
+
         <h2>WHY 3-D PRINTED SPLINTS/GUARDS?</h2>
         <div>
-          <img id="cleaner_icon" src={cleaner_icon}></img>
-          <h3>EASY TO CLEAN</h3>
-          <p>
-            Compliant with global industry standards. Rigorous testing for
-            safety and effectiveness per ISO 10993
-          </p>
+          <div className="home_card_two--item">
+            <img id="cleaner_icon" src={cleaner_icon}></img>
+            <h3>EASY TO CLEAN</h3>
+            <p>
+              Compliant with global industry standards. Rigorous testing for
+              safety and effectiveness per ISO 10993
+            </p>
+          </div>
+
+          <div className="home_card_two--item">
+            <img id="bio_icon" src={bio_icon}></img>
+            <h3>FULLY BIOCOMPATIBLE</h3>
+            <p>
+              Compliant with global industry standards. Rigorous testing for
+              safety and effectiveness per ISO 10993
+            </p>
+          </div>
+
+          <div className="home_card_two--item">
+            <img id="strong_icon" src={strong_icon}></img>
+            <h3>DURABLE AND LONG LIFE</h3>
+            <p>
+              Compliant with global industry standards. Rigorous testing for
+              safety and effectiveness per ISO 10993
+            </p>
+          </div>
         </div>
-        <div>
-          <img id="bio_icon" src={bio_icon}></img>
-          <h3>FULLY BIOCOMPATIBLE</h3>
-          <p>
-            Compliant with global industry standards. Rigorous testing for
-            safety and effectiveness per ISO 10993
-          </p>
-        </div>
-        <div>
-          <img id="strong_icon" src={strong_icon}></img>
-          <h3>DURABLE AND LONG LIFE</h3>
-          <p>
-            Compliant with global industry standards. Rigorous testing for
-            safety and effectiveness per ISO 10993
-          </p>
-        </div>
+
       </div>
+
     </section>
   );
 }
