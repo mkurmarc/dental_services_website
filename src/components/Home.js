@@ -8,13 +8,12 @@ import strong_icon from "../images/raw/keyprint/strong_icon.png";
 function HomeHeader() {
   return (
     <header className="home_header">
-      <div className="home_header home--container">
-        <h1 className="home_header--title">HIGH-TECH DENTAL PRODUCTS</h1>
+      <div className="home_header--container">
+        <h1>HIGH-TECH DENTAL PRODUCTS</h1>
         <div className="home_header--about">
-          <span className="home_header--hyphen"></span>
-          <h3>ABOUT US</h3>
+          <span></span><h3>ABOUT US</h3>
         </div>
-        <p className="home_header--p">
+        <p>
           Advanced Dental Solutions, LLC is a manufacturer and distributer of
           innovative dental products. Interested in modernization?
         </p>
@@ -25,16 +24,19 @@ function HomeHeader() {
 
 function HomeCardOne() {
     return (
-        <section className="home_card_one home--container">
-          <div className="home--item">
-            <h2>3-D PRINTED TECHNOLOGY</h2>
-            <p>The next evolutionary step in occusal splints has arrived. Digitally
-                designed and 3-D printed for maximum precision.</p>
+        <section className="home_card_one">
+          <div className="home_card_one--container">
+            <div className="home--item">
+              <h2>3-D PRINTED TECHNOLOGY</h2>
+              <p>The next evolutionary step in occusal splints has arrived. Digitally
+                  designed and 3-D printed for maximum precision.</p>
+            </div>
+            <div className="home--item">
+              <img id="home_card_one--img" src={keysplint_hard}></img>
+              <h3>KEYSPLINT HARD</h3>
+            </div>            
           </div>
-          <div className="home--item">
-            <img id="home_card_one--img" src={keysplint_hard}></img>
-            <h3>KEYSPLINT HARD</h3>
-          </div>
+
         </section>
     )
 }
