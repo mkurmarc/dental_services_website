@@ -8,12 +8,12 @@ html {
 
 html,
 body,
-p {
+p, h1 {
   margin: 0;
   padding: 0;
 }
-/* Typography */
 
+/* Typography */
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -159,6 +159,10 @@ footer {
   font-weight: 400;
 }
 
+.home_card_two > h2 {
+  margin: 0;
+}
+
 /***************************** DESKTOP VERSION *****************************/
 @media (min-width: 600px) {
   /* Home Page */
@@ -301,13 +305,11 @@ footer {
     margin: 5rem;
   }
 
-  .home--item {
-    /* padding: 1rem; */
+  .home_card_two--item {
+    padding: 1rem;
   }
 
-  .home_card_two > h2 {
-    margin: 0;
-  }
+
 
 
 

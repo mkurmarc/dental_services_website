@@ -9,7 +9,7 @@ function HomeHeader() {
   return (
     <header className="home_header">
       <div className="home_header--container">
-        <h1>HIGH-TECH DENTAL PRODUCTS</h1>
+        <h1 className="home_header--title">HIGH-TECH DENTAL PRODUCTS</h1>
         <div className="home_header--about">
           <span></span><h3>ABOUT US</h3>
         </div>
@@ -43,7 +43,7 @@ function HomeCardTwo() {
     <section className="home_card_two">
         <h2>WHY 3-D PRINTED SPLINTS/GUARDS?</h2>
         <div className="home_card_two--container">
-          <div className="home--item">
+          <div className="home--item home_card_two--item">
             <img id="cleaner_icon" src={cleaner_icon}></img>
             <h3>EASY TO CLEAN</h3>
             <p>
@@ -52,7 +52,7 @@ function HomeCardTwo() {
             </p>
           </div>
 
-          <div className="home--item">
+          <div className="home--item home_card_two--item">
             <img id="bio_icon" src={bio_icon}></img>
             <h3>FULLY BIOCOMPATIBLE</h3>
             <p>
@@ -61,7 +61,7 @@ function HomeCardTwo() {
             </p>
           </div>
 
-          <div className="home--item">
+          <div className="home--item home_card_two--item">
             <img id="strong_icon" src={strong_icon}></img>
             <h3>DURABLE AND LONG LIFE</h3>
             <p>
