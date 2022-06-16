@@ -81,7 +81,7 @@ function HomeCardThree() {
             <img id="home_card_three--img" src={keysplint_soft}></img>
             <h3>KEYSPLINT SOFT</h3>
           </div>
-          <div className=" home--item">
+          <div className="home--item">
             <h2 >ELASTIC MEMORY BENEFITS ALL</h2>
             <p>By simply warming in water, placement become easy, fast and painless. Less
                 hassle and chairside time. Increased patient comfort. </p>
