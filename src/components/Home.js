@@ -24,19 +24,16 @@ function HomeHeader() {
 
 function HomeCardOne() {
     return (
-        <section className="home_card_one">
-          <div className="home_card_one--container">
-            <div className="home--item">
-              <h2>3-D PRINTED TECHNOLOGY</h2>
-              <p>The next evolutionary step in occusal splints has arrived. Digitally
-                  designed and 3-D printed for maximum precision.</p>
-            </div>
-            <div className="home--item">
-              <img id="home_card_one--img" src={keysplint_hard}></img>
-              <h3>KEYSPLINT HARD</h3>
-            </div>            
+        <section className="home_card_one--container">
+          <div className="home--item">
+            <h2>3-D PRINTED TECHNOLOGY</h2>
+            <p>The next evolutionary step in occusal splints has arrived. Digitally
+                designed and 3-D printed for maximum precision.</p>
           </div>
-
+          <div className="home--item">
+            <img id="home_card_one--img" src={keysplint_hard}></img>
+            <h3>KEYSPLINT HARD</h3>
+          </div>            
         </section>
     )
 }
@@ -44,12 +41,9 @@ function HomeCardOne() {
 function HomeCardTwo() {
   return (
     <section className="home_card_two">
-
-      <div className="home_card_two home--container">
-
         <h2>WHY 3-D PRINTED SPLINTS/GUARDS?</h2>
-        <div>
-          <div className="home_card_two home--item">
+        <div className="home_card_two--container">
+          <div className="home--item">
             <img id="cleaner_icon" src={cleaner_icon}></img>
             <h3>EASY TO CLEAN</h3>
             <p>
@@ -58,7 +52,7 @@ function HomeCardTwo() {
             </p>
           </div>
 
-          <div className="home_card_two home--item">
+          <div className="home--item">
             <img id="bio_icon" src={bio_icon}></img>
             <h3>FULLY BIOCOMPATIBLE</h3>
             <p>
@@ -67,7 +61,7 @@ function HomeCardTwo() {
             </p>
           </div>
 
-          <div className="home_card_two home--item">
+          <div className="home--item">
             <img id="strong_icon" src={strong_icon}></img>
             <h3>DURABLE AND LONG LIFE</h3>
             <p>
@@ -76,9 +70,6 @@ function HomeCardTwo() {
             </p>
           </div>
         </div>
-
-      </div>
-
     </section>
   );
 }
