@@ -11,7 +11,7 @@ function HomeHeader() {
       <div className="home_header--container">
         <h1 className="home_header--title">HIGH-TECH DENTAL PRODUCTS</h1>
         <div className="home_header--about">
-          <span></span><h3>ABOUT US</h3>
+          <span id="long-hyphen"></span><h3>ABOUT US</h3>
         </div>
         <p>
           Advanced Dental Solutions, LLC is a manufacturer and distributer of
