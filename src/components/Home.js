@@ -43,8 +43,9 @@ function HomeCardOne() {
 function HomeCardTwo() {
   return (
     <section className="home_card_two">
+      <div className="flex_col border">
         <h2>WHY 3-D PRINTED SPLINTS/GUARDS?</h2>
-        <div className="home_card_two--container">
+        <div className="home_card_two--container flex_row">
           <div className="home--item home_card_two--item">
             <img id="cleaner_icon" src={cleaner_icon}></img>
             <h3>EASY TO CLEAN</h3>
@@ -72,6 +73,7 @@ function HomeCardTwo() {
             </p>
           </div>
         </div>
+      </div>
     </section>
   );
 }

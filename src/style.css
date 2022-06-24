@@ -55,6 +55,22 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+/* Styles */
+  
+.flex_col {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex_row {
+  display: flex;
+  flex-direction: row;
+}
+
+.border {
+  border: 0.1rem solid white;
+}
+
 /* Navbar */
 nav {
   background-color: #111213;
@@ -118,10 +134,13 @@ nav {
 }
 
 .home_card_two {
-  background: conic-gradient(
-      from 90deg at -49.22% 100%, 
-      #FFFFFF 0deg, rgba(255, 255, 255, 0) 360deg), 
-      #1A1A1C;
+  background: url(
+    "../src/images/edited/backgrounds/manuf_process_blue_green.jpeg"
+  ) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .home_card_three {
@@ -208,9 +227,6 @@ footer {
   font-weight: 400;
 }
 
-.home_card_two > h2 {
-  margin: 0;
-}
 
 /***************************** DESKTOP VERSION *****************************/
 @media (min-width: 600px) {
@@ -220,7 +236,7 @@ footer {
     height: 41em;
     /* background: linear-gradient(180deg, #111111 0%, #0B192D 89.06%); */
   }
-  
+
   .home--container,
   .home_card_one--container {
     display: flex;
@@ -302,7 +318,7 @@ footer {
     flex-direction: column;
     flex-grow: 1;
   }
-
+  
   .home_card_one--item:first-child {
     padding-left: 6em;
     padding-top: 4em;
@@ -354,18 +370,18 @@ footer {
   }
 
   /* Home Card Two */
+  .home_card_two {
+    height: 48em;
+    padding: 5em;
+  } 
+
   .home_card_two--container {
-    display: flex;
-    flex-direction: row;
-    margin: 5rem;
+    height: 85%;
   }
 
   .home_card_two--item {
     padding: 1rem;
   }
-
-
-
 
 
   /* Home Card Three */
