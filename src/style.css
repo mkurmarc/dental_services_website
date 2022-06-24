@@ -96,11 +96,25 @@ nav {
   background-color: #111213;
 }
 
-.home_card_one--container {
+.home_card_one {
   background: conic-gradient(
       from 90deg at -49.22% 100%, 
       #FFFFFF 0deg, rgba(255, 255, 255, 0) 360deg), 
       #1A1A1C;
+}
+
+.home_card_one--item > h2 {
+  font-family: 'Crimson Text';
+  font-style: normal;
+  font-weight: 400;
+  color: #FFFFFF;
+}
+
+.home_card_one--item > p {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 300;
+  color: #FFFFFF;
 }
 
 .home_card_two {
@@ -229,7 +243,6 @@ footer {
   }
   
   .home_header--container > h1 {
-    margin: 0;
     color: #fff;
     font-family: Oswald;
     font-weight: 300;
@@ -284,51 +297,60 @@ footer {
 
   }
 
-  .home_card_one--item > h2 {
-    width: 638px;
-    max-height: 158px;
-    margin-top: 0;
-    font-family: 'Crimson Text';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 72px;
-    line-height: 94px;
-    letter-spacing: 0.02em;    
-    color: #FFFFFF;  
-  }
-
-  .home_card_one--item > p {
-    width: 550.89px;
-    font-family: 'Ubuntu';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 25px;
-    line-height: 120%;
-    letter-spacing: 0.12em;
-    color: #FFFFFF;
-  }
-
   .home_card_one--item {
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
   }
 
-  /* .home_card_one--item  */
+  .home_card_one--item:first-child {
+    padding-left: 6em;
+    padding-top: 4em;
+  }
+
+  /* .home_card_one--item:last-child {
+    margin-left: 15em;
+  } */
+
+  .home_card_one--item > h2 {
+      width: 10em;
+      font-family: 'Crimson Text';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 5.5rem;
+      letter-spacing: 0.125em;
+      color: #FFFFFF;
+      line-height: 1.4em;
+  }
+
+  .home_card_one--item > p {
+    width: 21em;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.9rem;
+    line-height: 1.4em;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+  }
 
   #home_card_one--img {
-    width: 70%;
+    width: 60%;
+    height: 90%; 
   }
 
   .home_card_one--item > h3 {
-    align-self: flex-end;
+    align-self: center;
     font-family: 'Nunito';
     font-style: normal;
     font-weight: 400;
-    font-size: 35px;
-    line-height: 30px;
-    /* or 86% */    
-    letter-spacing: 0.12em;    
+    font-size: 2.2rem;
+    letter-spacing: 0.12em;
     color: #FFFFFF;
+    width: 5em;
+    text-align: center;
+    line-height: 1.15em;
+    margin-top: 1em;
   }
 
   /* Home Card Two */

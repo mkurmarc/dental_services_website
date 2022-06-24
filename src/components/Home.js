@@ -24,16 +24,18 @@ function HomeHeader() {
 
 function HomeCardOne() {
     return (
-        <section className="home_card_one--container">
-          <div className="home--item">
-            <h2>3-D PRINTED TECHNOLOGY</h2>
-            <p>The next evolutionary step in occusal splints has arrived. Digitally
-                designed and 3-D printed for maximum precision.</p>
-          </div>
-          <div className="home--item">
-            <img id="home_card_one--img" src={keysplint_hard}></img>
-            <h3>KEYSPLINT HARD</h3>
-          </div>            
+        <section className="home_card_one">
+          <div className="home_card_one--container">
+            <div className="home_card_one--item">
+              <h2>3-D PRINTED TECHNOLOGY</h2>
+              <p>The next evolutionary step in occusal splints has arrived. Digitally
+                  designed and 3-D printed for maximum precision.</p>
+            </div>
+            <div className="home_card_one--item">
+              <img id="home_card_one--img" src={keysplint_hard}></img>
+              <h3>KEYSPLINT HARD</h3>
+            </div>      
+          </div>      
         </section>
     )
 }
