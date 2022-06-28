@@ -102,12 +102,6 @@ nav {
   letter-spacing: 0.14em; */
 }
 
-.home--item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .home_header {
   background-color: #111213;
 }
@@ -156,9 +150,7 @@ nav {
   width: 20%;
 }
 
-#cleaner_icon,
-#bio_icon,
-#strong_icon {
+.card_two_icon {
   width: 10%;
 }
 
@@ -274,7 +266,7 @@ footer {
     max-height: 6rem;
   }
   
-  #long-hyphen { 
+  .long-hyphen { 
     width: 3rem;
     height: 0px;
     border: 1px solid #FFFFFF;
@@ -371,16 +363,74 @@ footer {
 
   /* Home Card Two */
   .home_card_two {
-    height: 48em;
-    padding: 5em;
+    height: 43em;
+    padding: 6.5em 0;
+    align-items: center;
   } 
 
   .home_card_two--container {
+    height: 45em;
+    max-width: 67%;
+    background: linear-gradient(180deg, #FFFFFF 0%, 
+              rgba(232, 232, 232, 0.7) 100%);
+    box-shadow: 9px 6px 11px rgba(0, 0, 0, 0.5);
+    padding-right: 2em;
+  }
+
+  .home_card_two--container > h2 {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 3.4rem;
+    margin: 1em 0;
+    letter-spacing: 0.025em;    
+    color: #000000;
+    text-align: center;
+    /* font-size: 46px; */
+  }
+
+  .cards--container {
     height: 85%;
+    justify-content: space-evenly;
   }
 
   .home_card_two--item {
-    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+
+  .card_two_icon {
+    width: 11em;
+  }
+
+  .home_card_two--item > h3 {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.2rem;
+    line-height: 1.3em;
+    letter-spacing: 0.015em;    
+    color: #262626; 
+    margin: 1em 1em 0.4em 1em;
+  }
+
+  .cards--container .home_card_two--item:first-child > h3{
+    margin-top: 1.4em;
+  }
+
+  .home_card_two--item > p {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.4em;
+    text-align: center;
+    letter-spacing: 0.015em;    
+    color: #615757;  
+    padding: 0 2em;
   }
 
 

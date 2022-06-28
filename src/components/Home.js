@@ -1,9 +1,9 @@
 import React from "react";
 import keysplint_hard from "../images/raw/keyprint/keysplint_hard.png";
 import keysplint_soft from "../images/raw/keyprint/keysplint_soft.png";
-import cleaner_icon from "../images/raw/keyprint/easily_cleaned_icon.png";
-import bio_icon from "../images/raw/keyprint/biocompatible_icon.png";
-import strong_icon from "../images/raw/keyprint/strong_icon.png";
+import cleaner_icon from "../images/edited/keyprint/easily_cleaned_icon 1.png";
+import bio_icon from "../images/edited/keyprint/biocompatible_icon 1.png";
+import strong_icon from "../images/edited/keyprint/strong_icon 1.png";
 
 function HomeHeader() {
   return (
@@ -11,7 +11,7 @@ function HomeHeader() {
       <div className="home_header--container">
         <h1 className="home_header--title">HIGH-TECH DENTAL PRODUCTS</h1>
         <div className="home_header--about">
-          <span id="long-hyphen"></span><h3>ABOUT US</h3>
+          <span className="long-hyphen"></span><h3>ABOUT US</h3>
         </div>
         <p>
           Advanced Dental Solutions, LLC is a manufacturer and distributer of
@@ -43,35 +43,37 @@ function HomeCardOne() {
 function HomeCardTwo() {
   return (
     <section className="home_card_two">
-      <div className="flex_col border">
+      <div className="home_card_two--container flex_col border">
         <h2>WHY 3-D PRINTED SPLINTS/GUARDS?</h2>
-        <div className="home_card_two--container flex_row">
-          <div className="home--item home_card_two--item">
-            <img id="cleaner_icon" src={cleaner_icon}></img>
-            <h3>EASY TO CLEAN</h3>
-            <p>
-              Compliant with global industry standards. Rigorous testing for
-              safety and effectiveness per ISO 10993
-            </p>
-          </div>
+        <div className="cards--container flex_row">
 
-          <div className="home--item home_card_two--item">
-            <img id="bio_icon" src={bio_icon}></img>
-            <h3>FULLY BIOCOMPATIBLE</h3>
-            <p>
-              Compliant with global industry standards. Rigorous testing for
-              safety and effectiveness per ISO 10993
-            </p>
-          </div>
+            <div className="home_card_two--item">
+              <img className="card_two_icon" src={cleaner_icon}></img>
+              <h3>EASY TO CLEAN</h3>
+              <p>
+                Compliant with global industry standards. Rigorous testing for
+                safety and effectiveness per ISO 10993
+              </p>
+            </div>
 
-          <div className="home--item home_card_two--item">
-            <img id="strong_icon" src={strong_icon}></img>
-            <h3>DURABLE AND LONG LIFE</h3>
-            <p>
-              Compliant with global industry standards. Rigorous testing for
-              safety and effectiveness per ISO 10993
-            </p>
-          </div>
+            <div className="home_card_two--item">
+              <img className="card_two_icon" src={bio_icon}></img>
+              <h3>FULLY BIOCOMPATIBLE</h3>
+              <p>
+                Compliant with global industry standards. Rigorous testing for
+                safety and effectiveness per ISO 10993
+              </p>
+            </div>
+
+            <div className="home_card_two--item">
+              <img className="card_two_icon" src={strong_icon}></img>
+              <h3>DURABLE AND LONG LIFE</h3>
+              <p>
+                Compliant with global industry standards. Rigorous testing for
+                safety and effectiveness per ISO 10993
+              </p>
+            </div>
+
         </div>
       </div>
     </section>
