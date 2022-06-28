@@ -111,6 +111,8 @@ nav {
       from 90deg at -49.22% 100%, 
       #FFFFFF 0deg, rgba(255, 255, 255, 0) 360deg), 
       #1A1A1C;
+  padding: 8em 1em;
+  
 }
 
 .home_card_one--item > h2 {
@@ -135,6 +137,7 @@ nav {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  
 }
 
 .home_card_three {
@@ -145,10 +148,10 @@ nav {
 }
 
 /* Home Images */
-#home_card_one--img,
+/* #home_card_one--img,
 #home_card_three--img {
   width: 20%;
-}
+} */
 
 .card_two_icon {
   width: 10%;
@@ -229,11 +232,11 @@ footer {
     /* background: linear-gradient(180deg, #111111 0%, #0B192D 89.06%); */
   }
 
-  .home--container,
+  /* .home--container,
   .home_card_one--container {
     display: flex;
     flex-direction: row;
-  }
+  } */
 
   .home_header--container,
   .home_card--item,
@@ -301,24 +304,23 @@ footer {
 
   /* Home Card One */
   .home_card_one--container {
-    padding: 8em;
-
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    /* max-width: 125em; */
   }
 
   .home_card_one--item {
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
+    width: 50em;
   }
   
   .home_card_one--item:first-child {
     padding-left: 6em;
     padding-top: 4em;
   }
-
-  /* .home_card_one--item:last-child {
-    margin-left: 15em;
-  } */
 
   .home_card_one--item > h2 {
       width: 10em;
@@ -343,8 +345,8 @@ footer {
   }
 
   #home_card_one--img {
-    width: 60%;
-    height: 90%; 
+    width: 30em;
+    /* height: 90%;  */
   }
 
   .home_card_one--item > h3 {
@@ -435,14 +437,20 @@ footer {
 
 
   /* Home Card Three */
+  .home_card_three {
+    background: url(
+      "../src/images/edited/backgrounds/dots_black_white_grid 1.png"
+    ) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
   .home_card_three--container {
     display: flex;
     flex-direction: row;
     padding: 8em;
-    background: conic-gradient(
-      from 90deg at -49.22% 100%, 
-      #FFFFFF 0deg, rgba(255, 255, 255, 0) 360deg), 
-      #1A1A1C;
   }
 
   .home_card_three--item {
@@ -486,7 +494,8 @@ footer {
   }
 
   #home_card_three--img {
-    width: 100%;
+    width: 60%;
+    height: 90%; 
   }
 
 /* Footer */

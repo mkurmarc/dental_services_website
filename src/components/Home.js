@@ -4,6 +4,7 @@ import keysplint_soft from "../images/raw/keyprint/keysplint_soft.png";
 import cleaner_icon from "../images/edited/keyprint/easily_cleaned_icon 1.png";
 import bio_icon from "../images/edited/keyprint/biocompatible_icon 1.png";
 import strong_icon from "../images/edited/keyprint/strong_icon 1.png";
+import dot_bg from "../images/edited/backgrounds/dots_black_white_grid.jpg"
 
 function HomeHeader() {
   return (
@@ -82,7 +83,8 @@ function HomeCardTwo() {
 
 function HomeCardThree() {
     return (
-        <section className="home_card_three home--container">
+      <section className="home_card_three">
+        <div className="home_card_three--container">
           <div className=" home--item">
             <img id="home_card_three--img" src={keysplint_soft}></img>
             <h3>KEYSPLINT SOFT</h3>
@@ -93,7 +95,9 @@ function HomeCardThree() {
                 hassle and chairside time. Increased patient comfort. </p>
           </div>  
 
-        </section>
+        </div>
+      </section>
+
     )
 }
 
