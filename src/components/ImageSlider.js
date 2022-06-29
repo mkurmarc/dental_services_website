@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import { ReviewData } from "../data/ReviewData";
-import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from "react-icons/fa";
+import {
+  IoIosArrowDropleftCircle,
+  IoIosArrowDroprightCircle,
+} from "react-icons/io";
 
 const ImageSlider = ({ slides }) => {
   const [current, setCurrent] = useState(0);
@@ -22,12 +25,16 @@ const ImageSlider = ({ slides }) => {
 
   return (
     <section className="slider">
-      <FaArrowAltCircleLeft className="arrow arrow--left" onClick={prevSlide} />
-      <FaArrowAltCircleRight
+      <IoIosArrowDropleftCircle
+        className="arrow arrow--left"
+        onClick={prevSlide}
+      />
+      <IoIosArrowDroprightCircle
         className="arrow arrow--right"
         onClick={nextSlide}
       />
       {ReviewData.map((slide, index) => {
+        console.log(slide, index);
         return (
           <div
             className={index === current ? "slide active" : "slide"}

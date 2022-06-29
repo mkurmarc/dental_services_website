@@ -14,7 +14,7 @@ export default function Navbar() {
       <Link to="/">Home</Link>
       <Link to="/about">About</Link>
       <Link to="/products">Products</Link>
-      <span class="material-symbols-outlined">menu</span>
+      <span className="material-symbols-outlined">menu</span>
     </nav>
   );
 }

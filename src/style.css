@@ -1,45 +1,126 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 :root {
@@ -56,7 +137,7 @@ body {
 }
 
 /* Styles */
-  
+
 .flex_col {
   display: flex;
   flex-direction: column;
@@ -121,23 +202,22 @@ nav {
 }
 
 .home_card_one--item > h2 {
-  font-family: 'Crimson Text';
+  font-family: "Crimson Text";
   font-style: normal;
   font-weight: 400;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .home_card_one--item > p {
-  font-family: 'Ubuntu';
+  font-family: "Ubuntu";
   font-style: normal;
   font-weight: 300;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .home_card_two {
-  background: url(
-    "../src/images/edited/backgrounds/manuf_process_blue_green.jpeg"
-  ) no-repeat center center fixed;
+  background: url("../src/images/edited/backgrounds/manuf_process_blue_green.jpeg")
+    no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -239,6 +319,7 @@ nav {
 .review--info {
   display: flex;
   justify-content: space-between;
+  gap: 1em;
 }
 
 .read--more {
@@ -265,7 +346,7 @@ nav {
 .arrow {
   position: absolute;
   top: 55%;
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: #000;
   z-index: 10;
   cursor: pointer;
@@ -273,11 +354,11 @@ nav {
 }
 
 .arrow--right {
-  right: 2em;
+  right: 1.2em;
 }
 
 .arrow--left {
-  left: 2em;
+  left: 1.2em;
 }
 
 .slide {
@@ -287,8 +368,22 @@ nav {
 
 .slide.active {
   opacity: 1;
-  transition-duration: 1s;
-  transform: scale(1.08);
+  animation: wipe-in-left;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+@keyframes wipe-in-left {
+  from {
+    clip-path: inset(0 0 0 100%);
+  }
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+[transition-style="in:wipe:left"] {
+  animation: 2.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-left both;
 }
 
 /* Footer */
@@ -355,7 +450,6 @@ footer {
   font-weight: 400;
 }
 
-
 /***************************** DESKTOP VERSION *****************************/
 @media (min-width: 600px) {
   /* Home Page */
@@ -402,7 +496,7 @@ footer {
     max-height: 6rem;
   }
 
-  .long-hyphen { 
+  .long-hyphen {
     width: 3rem;
     height: 0px;
     border: 1px solid #ffffff;
@@ -437,7 +531,6 @@ footer {
   /* Home Card One */
   .home_card_one--container {
     padding: 8em;
-
   }
 
   .home_card_one--item {
@@ -445,7 +538,7 @@ footer {
     flex-direction: column;
     flex-grow: 1;
   }
-  
+
   .home_card_one--item:first-child {
     padding-left: 6em;
     padding-top: 4em;
@@ -456,40 +549,40 @@ footer {
   } */
 
   .home_card_one--item > h2 {
-      width: 10em;
-      font-family: 'Crimson Text';
-      font-style: normal;
-      font-weight: 400;
-      font-size: 5.5rem;
-      letter-spacing: 0.125em;
-      color: #FFFFFF;
-      line-height: 1.4em;
+    width: 10em;
+    font-family: "Crimson Text";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 5.5rem;
+    letter-spacing: 0.125em;
+    color: #ffffff;
+    line-height: 1.4em;
   }
 
   .home_card_one--item > p {
     width: 21em;
-    font-family: 'Ubuntu';
+    font-family: "Ubuntu";
     font-style: normal;
     font-weight: 300;
     font-size: 1.9rem;
     line-height: 1.4em;
     letter-spacing: 0.1em;
-    color: #FFFFFF;
+    color: #ffffff;
   }
 
   #home_card_one--img {
     width: 60%;
-    height: 90%; 
+    height: 90%;
   }
 
   .home_card_one--item > h3 {
     align-self: center;
-    font-family: 'Nunito';
+    font-family: "Nunito";
     font-style: normal;
     font-weight: 400;
     font-size: 2.2rem;
     letter-spacing: 0.12em;
-    color: #FFFFFF;
+    color: #ffffff;
     width: 5em;
     text-align: center;
     line-height: 1.15em;
@@ -500,7 +593,7 @@ footer {
   .home_card_two {
     height: 48em;
     padding: 5em;
-  } 
+  }
 
   .home_card_two--container {
     height: 85%;
