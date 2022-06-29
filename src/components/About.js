@@ -1,6 +1,8 @@
 import React from "react";
 import Review from "./Review";
+import ImageSlider from "./ImageSlider";
 import logo from "../images/edited/logos/logo.jpeg";
+import { ReviewData } from "../data/ReviewData";
 
 export default function About() {
   return (
@@ -21,10 +23,14 @@ export default function About() {
           </p>
         </div>
       </section>
-      <section className="about--reviews">
+      {/* <section className="about--reviews">
         <Review />
         <Review />
         <Review />
+      </section> */}
+
+      <section>
+        <ImageSlider slides={ReviewData} />
       </section>
     </div>
   );
