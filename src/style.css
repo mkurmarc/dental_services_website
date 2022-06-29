@@ -1,3 +1,47 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
 :root {
   box-sizing: border-box;
 }
@@ -6,20 +50,26 @@ html {
   box-sizing: inherit;
 }
 
-html,
-body,
-p,
-h1 {
-  margin: 0;
-  padding: 0;
-}
-
 /* Typography */
 body {
   font-family: "Roboto", sans-serif;
 }
 
-/* Layout */
+/* Styles */
+  
+.flex_col {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex_row {
+  display: flex;
+  flex-direction: row;
+}
+
+.border {
+  border: 0.1rem solid white;
+}
 
 /* Navbar */
 nav {
@@ -61,7 +111,7 @@ nav {
   background-color: #111213;
 }
 
-.home_card_one--container {
+.home_card_one {
   background: conic-gradient(
       from 90deg at -49.22% 100%,
       #ffffff 0deg,
@@ -70,13 +120,28 @@ nav {
     #1a1a1c;
 }
 
+.home_card_one--item > h2 {
+  font-family: 'Crimson Text';
+  font-style: normal;
+  font-weight: 400;
+  color: #FFFFFF;
+}
+
+.home_card_one--item > p {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 300;
+  color: #FFFFFF;
+}
+
 .home_card_two {
-  background: conic-gradient(
-      from 90deg at -49.22% 100%,
-      #ffffff 0deg,
-      rgba(255, 255, 255, 0) 360deg
-    ),
-    #1a1a1c;
+  background: url(
+    "../src/images/edited/backgrounds/manuf_process_blue_green.jpeg"
+  ) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .home_card_three {
@@ -290,20 +355,18 @@ footer {
   font-weight: 400;
 }
 
-.home_card_two > h2 {
-  margin: 0;
-}
 
 /***************************** DESKTOP VERSION *****************************/
 @media (min-width: 600px) {
   /* Home Page */
   header {
     background-color: #111213;
-    height: 41rem;
+    height: 41em;
     /* background: linear-gradient(180deg, #111111 0%, #0B192D 89.06%); */
   }
 
-  .home--container {
+  .home--container,
+  .home_card_one--container {
     display: flex;
     flex-direction: row;
   }
@@ -316,15 +379,14 @@ footer {
   }
 
   .home_header {
-    padding-top: 8rem;
-    padding-left: 8rem;
-    padding-right: 11.5rem;
+    padding-top: 8em;
+    padding-left: 8em;
+    padding-right: 11.5em;
     display: flex;
     flex-direction: column;
   }
 
   .home_header--container > h1 {
-    margin: 0;
     color: #fff;
     font-family: Oswald;
     font-weight: 300;
@@ -340,7 +402,7 @@ footer {
     max-height: 6rem;
   }
 
-  .home_header--about > span {
+  .long-hyphen { 
     width: 3rem;
     height: 0px;
     border: 1px solid #ffffff;
@@ -374,65 +436,74 @@ footer {
 
   /* Home Card One */
   .home_card_one--container {
-    display: flex;
-    flex-direction: row;
     padding: 8em;
-    /* padding-top: 8rem;
-    padding-left: 8rem; */
-  }
 
-  .home_card_one--item > h2 {
-    width: 638px;
-    max-height: 158px;
-    margin-top: 0;
-    font-family: "Crimson Text";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 72px;
-    line-height: 94px;
-    letter-spacing: 0.02em;
-    color: #ffffff;
-  }
-
-  .home_card_one--item > p {
-    width: 550.89px;
-    font-family: "Ubuntu";
-    font-style: normal;
-    font-weight: 300;
-    font-size: 25px;
-    line-height: 120%;
-    letter-spacing: 0.12em;
-    color: #ffffff;
   }
 
   .home_card_one--item {
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
+  }
+  
+  .home_card_one--item:first-child {
+    padding-left: 6em;
+    padding-top: 4em;
   }
 
-  /* .home_card_one--item  */
+  /* .home_card_one--item:last-child {
+    margin-left: 15em;
+  } */
+
+  .home_card_one--item > h2 {
+      width: 10em;
+      font-family: 'Crimson Text';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 5.5rem;
+      letter-spacing: 0.125em;
+      color: #FFFFFF;
+      line-height: 1.4em;
+  }
+
+  .home_card_one--item > p {
+    width: 21em;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.9rem;
+    line-height: 1.4em;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+  }
 
   #home_card_one--img {
-    width: 70%;
+    width: 60%;
+    height: 90%; 
   }
 
   .home_card_one--item > h3 {
-    align-self: flex-end;
-    font-family: "Nunito";
+    align-self: center;
+    font-family: 'Nunito';
     font-style: normal;
     font-weight: 400;
-    font-size: 35px;
-    line-height: 30px;
-    /* or 86% */
+    font-size: 2.2rem;
     letter-spacing: 0.12em;
-    color: #ffffff;
+    color: #FFFFFF;
+    width: 5em;
+    text-align: center;
+    line-height: 1.15em;
+    margin-top: 1em;
   }
 
   /* Home Card Two */
+  .home_card_two {
+    height: 48em;
+    padding: 5em;
+  } 
+
   .home_card_two--container {
-    display: flex;
-    flex-direction: row;
-    margin: 5rem;
+    height: 85%;
   }
 
   .home_card_two--item {
