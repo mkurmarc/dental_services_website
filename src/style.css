@@ -50,6 +50,11 @@ html {
   box-sizing: inherit;
 }
 
+.app {
+  width: 100vw;
+  height: 100vh;
+}
+
 /* Typography */
 body {
   font-family: "Roboto", sans-serif;
@@ -74,10 +79,14 @@ body {
 /* Navbar */
 nav {
   background-color: #111213;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   color: #fff;
   display: flex;
   flex-direction: row;
   padding: 1em;
+
 }
 
 .nav--logo {
@@ -89,7 +98,7 @@ nav {
 
 
 /* Home Component */
-.home--container {
+/*.home--container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -98,9 +107,7 @@ nav {
   color: #fff;
   font-family: Oswald;
   font-weight: 300;
-  /* font-size: 90px;
-  letter-spacing: 0.14em; */
-}
+} */
 
 .home_header {
   background-color: #111213;
@@ -110,9 +117,7 @@ nav {
   background: conic-gradient(
       from 90deg at -49.22% 100%, 
       #FFFFFF 0deg, rgba(255, 255, 255, 0) 360deg), 
-      #1A1A1C;
-  padding: 8em 1em;
-  
+      #1A1A1C;  
 }
 
 .home_card_one--item > h2 {
@@ -249,8 +254,6 @@ footer {
     padding-top: 8em;
     padding-left: 8em;
     padding-right: 11.5em;
-    display: flex;
-    flex-direction: column;
   }
   
   .home_header--container > h1 {
@@ -303,18 +306,24 @@ footer {
   }
 
   /* Home Card One */
+  .home_card_one {
+    padding: 8em 1em;
+  }
+
   .home_card_one--container {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
+    /* flex-wrap: wrap; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    width: 100em;
     /* max-width: 125em; */
   }
 
   .home_card_one--item {
     display: flex;
     flex-direction: column;
-    width: 50em;
+    /* width: 50em; */
   }
   
   .home_card_one--item:first-child {
@@ -344,7 +353,7 @@ footer {
     color: #FFFFFF;
   }
 
-  #home_card_one--img {
+  .home_card_one--img {
     width: 30em;
     /* height: 90%;  */
   }
@@ -493,9 +502,9 @@ footer {
     color: #FFFFFF;
   }
 
-  #home_card_three--img {
-    width: 60%;
-    height: 90%; 
+  .home_card_three--img {
+    width: 30%;
+    /* height: 90%;  */
   }
 
 /* Footer */

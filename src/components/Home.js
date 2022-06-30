@@ -33,7 +33,7 @@ function HomeCardOne() {
                   designed and 3-D printed for maximum precision.</p>
             </div>
             <div className="home_card_one--item">
-              <img id="home_card_one--img" src={keysplint_hard}></img>
+              <img className="home_card_one--img" src={keysplint_hard}></img>
               <h3>KEYSPLINT HARD</h3>
             </div>      
           </div>      
@@ -86,7 +86,7 @@ function HomeCardThree() {
       <section className="home_card_three">
         <div className="home_card_three--container">
           <div className=" home--item">
-            <img id="home_card_three--img" src={keysplint_soft}></img>
+            <img className="home_card_three--img" src={keysplint_soft}></img>
             <h3>KEYSPLINT SOFT</h3>
           </div>
           <div className="home--item">
