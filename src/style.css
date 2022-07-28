@@ -237,12 +237,6 @@ footer {
     /* background: linear-gradient(180deg, #111111 0%, #0B192D 89.06%); */
   }
 
-  /* .home--container,
-  .home_card_one--container {
-    display: flex;
-    flex-direction: row;
-  } */
-
   .home_header--container,
   .home_card--item,
   .home_card_two {
