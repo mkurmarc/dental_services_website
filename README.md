@@ -1,7 +1,9 @@
 
 # A company website for Advanced Dental Solutions, who 3-D print mouth stints and guards for their dentist clientele.
 ## Below are the web page designs which were made in Figma
+
 <br>
+
 ### This is the home page design
 ![home](https://user-images.githubusercontent.com/51379562/181430844-c877ba7c-6462-485b-a618-ae5e19f8b7df.png)
 
