@@ -4,8 +4,11 @@
 ### This is the home page design
 ![home](https://user-images.githubusercontent.com/51379562/181430844-c877ba7c-6462-485b-a618-ae5e19f8b7df.png)
 
-<pre>
+
 ### This is the about us page design
+<pre>
+
+
 
 </pre>
 ![about_us_1](https://user-images.githubusercontent.com/51379562/181430850-96e76323-2940-4c4c-981c-811ad2570eb8.png)
